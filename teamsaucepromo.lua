@@ -17,24 +17,25 @@ local Converted = {
 
 -- Properties:
 
-Converted["_ScreenGui"].Parent = game:GetService("CoreGui")
+-- Parent the ScreenGui to the player's PlayerGui, not CoreGui
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+Converted["_ScreenGui"].Parent = LocalPlayer:WaitForChild("PlayerGui")
 
 Converted["_Frame"].Image = "rbxassetid://3570695787"
-Converted["_Frame"].ImageColor3 = Color3.fromRGB(255, 93.00000205636024, 96.00000947713852)
-Converted["_Frame"].ImageContent = Content
+Converted["_Frame"].ImageColor3 = Color3.fromRGB(255, 93, 96)
 Converted["_Frame"].ScaleType = Enum.ScaleType.Slice
 Converted["_Frame"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Frame"].SliceScale = 0.11999999731779099
+Converted["_Frame"].SliceScale = 0.12
 Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Frame"].BackgroundTransparency = 1
-Converted["_Frame"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(27, 42, 53)
 Converted["_Frame"].Position = UDim2.new(0.233667314, 0, 0.272388071, 0)
 Converted["_Frame"].Size = UDim2.new(0, 541, 0, 286)
 Converted["_Frame"].Name = "Frame"
 Converted["_Frame"].Parent = Converted["_ScreenGui"]
 
 Converted["_ImageButton"].Image = "rbxassetid://115936484950210"
-Converted["_ImageButton"].ImageContent = Content
 Converted["_ImageButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ImageButton"].BorderSizePixel = 0
@@ -42,11 +43,10 @@ Converted["_ImageButton"].Position = UDim2.new(0.112754159, 0, 0.409090906, 0)
 Converted["_ImageButton"].Size = UDim2.new(0, 200, 0, 50)
 Converted["_ImageButton"].Parent = Converted["_Frame"]
 
-Converted["_UICorner"].CornerRadius = UDim.new(0.200000003, 8)
+Converted["_UICorner"].CornerRadius = UDim.new(0.2, 8)
 Converted["_UICorner"].Parent = Converted["_ImageButton"]
 
 Converted["_ImageLabel"].Image = "rbxassetid://97452911691346"
-Converted["_ImageLabel"].ImageContent = Content
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ImageLabel"].BorderSizePixel = 0
@@ -55,7 +55,6 @@ Converted["_ImageLabel"].Size = UDim2.new(0, 357, 0, 49)
 Converted["_ImageLabel"].Parent = Converted["_Frame"]
 
 Converted["_ImageButton1"].Image = "rbxassetid://100324559183689"
-Converted["_ImageButton1"].ImageContent = Content
 Converted["_ImageButton1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageButton1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ImageButton1"].BorderSizePixel = 0
@@ -63,17 +62,16 @@ Converted["_ImageButton1"].Position = UDim2.new(0.528650641, 0, 0.409090906, 0)
 Converted["_ImageButton1"].Size = UDim2.new(0, 200, 0, 50)
 Converted["_ImageButton1"].Parent = Converted["_Frame"]
 
-Converted["_UICorner1"].CornerRadius = UDim.new(0.200000003, 8)
+Converted["_UICorner1"].CornerRadius = UDim.new(0.2, 8)
 Converted["_UICorner1"].Parent = Converted["_ImageButton1"]
 
 -- Fake Module Scripts:
 
 local fake_module_scripts = {}
 
-
 -- Fake Local Scripts:
 
-local function UFDK_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.DragScript
+local function UFDK_fake_script() -- DragScript
     local script = Instance.new("LocalScript")
     script.Name = "DragScript"
     script.Parent = Converted["_Frame"]
@@ -124,9 +122,9 @@ local function UFDK_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.Dra
 			end
 		end
 	end)
-	
 end
-local function GZSKSLZ_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.ImageButton.ButtonClickHandler
+
+local function GZSKSLZ_fake_script() -- ButtonClickHandler for _ImageButton
     local script = Instance.new("LocalScript")
     script.Name = "ButtonClickHandler"
     script.Parent = Converted["_ImageButton"]
@@ -145,17 +143,19 @@ local function GZSKSLZ_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.
 		if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
 		else
-			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+			local TextChatService = game:GetService("TextChatService")
+			if TextChatService.TextChannels:FindFirstChild("RBXGeneral") then
+				TextChatService.TextChannels.RBXGeneral:SendAsync(msg)
+			end
 		end
 	end
 	
 	button.MouseButton1Click:Connect(function()
 		Chat("TEAM SAUCE IS HERE, MIGHT AS WELL JOIN. 123 SAUCE!!")
 	end)
-	
-	
 end
-local function DGMXOGD_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.ImageButton.ButtonClickHandler
+
+local function DGMXOGD_fake_script() -- ButtonClickHandler for _ImageButton1
     local script = Instance.new("LocalScript")
     script.Name = "ButtonClickHandler"
     script.Parent = Converted["_ImageButton1"]
@@ -174,17 +174,19 @@ local function DGMXOGD_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.
 		if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
 		else
-			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+			local TextChatService = game:GetService("TextChatService")
+			if TextChatService.TextChannels:FindFirstChild("RBXGeneral") then
+				TextChatService.TextChannels.RBXGeneral:SendAsync(msg)
+			end
 		end
 	end
 	
 	button.MouseButton1Click:Connect(function()
 		Chat("A HOUSE HAS BEEN SAUCED BY TEAM SAUCE. YOU MAY BE NEXT.")
 	end)
-	
-	
 end
 
 coroutine.wrap(UFDK_fake_script)()
 coroutine.wrap(GZSKSLZ_fake_script)()
 coroutine.wrap(DGMXOGD_fake_script)()
+
