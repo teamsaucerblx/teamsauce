@@ -1,11 +1,3 @@
---notification
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Made By Team Sauce",
-    Text = "Now works in WAAPP!",
-    Icon = "rbxassetid://127075522746007"
-})
---SCRIPT START
-
 local Gui = Instance.new("ScreenGui")
 local Drag = Instance.new("Frame")
 local Main = Instance.new("ImageLabel")
