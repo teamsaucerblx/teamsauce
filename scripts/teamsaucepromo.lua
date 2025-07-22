@@ -1,4 +1,10 @@
--- now undetected
+--notification
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Made By Team Sauce",
+    Text = "Now works in WAAPP!",
+    Icon = "rbxassetid://127075522746007"
+})
+--SCRIPT START
 
 local Gui = Instance.new("ScreenGui")
 local Drag = Instance.new("Frame")
@@ -8,12 +14,15 @@ local Btn2 = Instance.new("ImageButton")
 local Top = Instance.new("ImageLabel")
 local UIC1 = Instance.new("UICorner")
 local UIC2 = Instance.new("UICorner")
+local MinBtn = Instance.new("TextButton")
 
+-- Gui config
 Gui.Name = ".̷̼̘͉͎̼̞̥̺̫̝̩̽ͥ͂̀"
 Gui.ResetOnSpawn = false
 Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Gui.Parent = game:GetService("CoreGui")
 
+-- Drag frame
 Drag.Name = ".̷̼̘͉͎̼̞̥̺̫̝̩̽ͥ͂̀."
 Drag.BackgroundTransparency = 1
 Drag.Size = UDim2.new(0, 541, 0, 286)
@@ -22,6 +31,7 @@ Drag.Parent = Gui
 Drag.Active = true
 Drag.Draggable = true
 
+-- Main panel
 Main.Name = ".̶̰͇̗̩̟͓̎"
 Main.Parent = Drag
 Main.Size = UDim2.new(0, 541, 0, 286)
@@ -33,6 +43,7 @@ Main.ScaleType = Enum.ScaleType.Slice
 Main.SliceCenter = Rect.new(100, 100, 100, 100)
 Main.SliceScale = 0.12
 
+-- Top bar
 Top.Name = "𝕋𝕠𝕡"
 Top.Parent = Main
 Top.Image = "rbxassetid://97452911691346"
@@ -40,6 +51,7 @@ Top.Size = UDim2.new(0, 357, 0, 49)
 Top.Position = UDim2.new(0.170, 0, 0.059, 0)
 Top.BackgroundTransparency = 1
 
+-- Button 1 (Join Message)
 Btn1.Name = "ß₁"
 Btn1.Parent = Main
 Btn1.Image = "rbxassetid://115936484950210"
@@ -49,6 +61,7 @@ Btn1.BackgroundTransparency = 1
 UIC1.Parent = Btn1
 UIC1.CornerRadius = UDim.new(0.2, 8)
 
+-- Button 2 (Saucin Message)
 Btn2.Name = "ß₂"
 Btn2.Parent = Main
 Btn2.Image = "rbxassetid://100324559183689"
@@ -58,7 +71,20 @@ Btn2.BackgroundTransparency = 1
 UIC2.Parent = Btn2
 UIC2.CornerRadius = UDim.new(0.2, 8)
 
--- Chat Function
+-- Minimize button
+MinBtn.Name = "⧉"
+MinBtn.Parent = Top
+MinBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MinBtn.BackgroundTransparency = 1
+MinBtn.Position = UDim2.new(0.85, 0, 0, 0)
+MinBtn.Size = UDim2.new(0, 32, 0, 25)
+MinBtn.Font = Enum.Font.GothamSemibold
+MinBtn.Text = "_"
+MinBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinBtn.TextScaled = true
+MinBtn.TextWrapped = true
+
+-- Chat function
 local function chat(msg)
 	local rs = game:GetService("ReplicatedStorage")
 	if rs:FindFirstChild("DefaultChatSystemChatEvents") then
@@ -71,11 +97,22 @@ local function chat(msg)
 	end
 end
 
--- Button Connections
+-- Button actions
 Btn1.MouseButton1Click:Connect(function()
 	chat("TEAM SAUCE IS HERE, MIGHT AS WELL JOIN. 123 SAUCE!!")
 end)
 
 Btn2.MouseButton1Click:Connect(function()
 	chat("A HOUSE HAS BEEN SAUCED BY TEAM SAUCE. YOU MAY BE NEXT.")
+end)
+
+-- Minimize toggle
+local minimized = false
+MinBtn.MouseButton1Click:Connect(function()
+	minimized = not minimized
+	for _, obj in ipairs(Main:GetChildren()) do
+		if obj ~= Top then
+			obj.Visible = not minimized
+		end
+	end
 end)
