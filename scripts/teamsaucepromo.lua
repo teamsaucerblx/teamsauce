@@ -20,7 +20,7 @@ local Converted = {
 -- Parent the ScreenGui to the player's PlayerGui, not CoreGui
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
-Converted["_ScreenGui"].Parent = gethui()
+Converted["_ScreenGui"].Parent = syn_protectgui()
 
 Converted["_Frame"].Image = "rbxassetid://3570695787"
 Converted["_Frame"].ImageColor3 = Color3.fromRGB(255, 93, 96)
