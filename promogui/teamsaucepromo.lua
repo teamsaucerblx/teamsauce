@@ -204,7 +204,7 @@ ImageLabel_4.SliceScale = 0.120
 
 -- Scripts:
 
-local function QJJCT_fake_script() -- Frame.drag 
+local function ROLGSO_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
@@ -247,8 +247,8 @@ local function QJJCT_fake_script() -- Frame.drag
 	end)
 	
 end
-coroutine.wrap(QJJCT_fake_script)()
-local function ICVUHG_fake_script() -- minbtn.?????? 
+coroutine.wrap(ROLGSO_fake_script)()
+local function EBMKJYE_fake_script() -- minbtn.?????? 
 	local script = Instance.new('LocalScript', minbtn)
 
 	local button = script.Parent
@@ -266,8 +266,8 @@ local function ICVUHG_fake_script() -- minbtn.??????
 	
 	
 end
-coroutine.wrap(ICVUHG_fake_script)()
-local function YQYZNV_fake_script() -- TextButton.??????? 
+coroutine.wrap(EBMKJYE_fake_script)()
+local function LUGJADD_fake_script() -- TextButton.??????? 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -286,8 +286,8 @@ local function YQYZNV_fake_script() -- TextButton.???????
 	
 	
 end
-coroutine.wrap(YQYZNV_fake_script)()
-local function AHNQYMN_fake_script() -- TextButton_2.?????????? 
+coroutine.wrap(LUGJADD_fake_script)()
+local function KXOER_fake_script() -- TextButton_2.?????????? 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -306,8 +306,8 @@ local function AHNQYMN_fake_script() -- TextButton_2.??????????
 	
 	
 end
-coroutine.wrap(AHNQYMN_fake_script)()
-local function DSONCGB_fake_script() -- TextButton_3.?????? 
+coroutine.wrap(KXOER_fake_script)()
+local function XPJPM_fake_script() -- TextButton_3.?????? 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -318,26 +318,62 @@ local function DSONCGB_fake_script() -- TextButton_3.??????
 	
 	
 end
-coroutine.wrap(DSONCGB_fake_script)()
-local function LDVU_fake_script() -- TextButton_4.buttonhandler 
+coroutine.wrap(XPJPM_fake_script)()
+local function TZFXSXP_fake_script() -- TextButton_4.buttonhandler 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
-		-- teleport every model named "Car" in the workspace to 76.518, -5456.55, 13.851, offsetting each car
-		local basePosition = Vector3.new(76.518, -5456.55, 13.851)
-		local offsetStep = 10 -- distance between each car
-		local carIndex = 0
-		for _, model in workspace:GetChildren() do
-			if model:IsA("Model") and model.Name == "Car" then
-				local targetCFrame = CFrame.new(basePosition + Vector3.new(carIndex * offsetStep, 0, 0))
-				model:PivotTo(targetCFrame)
-				carIndex = carIndex + 1
+		--modified WCPD script
+		_G.cookroomfucker = true -- change to false and re execute if you wanna turn it off 
+		local lp = game:GetService("Players").LocalPlayer
+		local remote
+		local ffc = game.FindFirstChild
+	
+		do
+			local reg = (getreg or debug.getregistry)()
+			for i = 1, #reg do
+				local f = reg[i]
+				if type(f)=="table" and rawget(f,"FireServer") and rawget(f,"BindEvents") then
+					remote = f
+				end
 			end
 		end
+	
+		function moveThing(bmd, location)
+			remote:FireServer("UpdateProperty", bmd, "CFrame", location)
+			wait()
+		end
+	
+		-- main script
+	
+		for i,v in pairs(workspace.AllSupplyBoxes:GetChildren()) do
+			v.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+		wait()
+	
+	
+		spawn(function()
+			while _G.cookroomfucker and wait() do
+				spawn(function()
+					for i,v in pairs(workspace.Cars:GetChildren()) do
+						moveThing(v, CFrame.new(Random.new():NextNumber(22.6,51.6),Random.new():NextNumber(3.6,14.6),Random.new():NextNumber(55.5,70.5)))
+					end
+				end)
+			end
+		end)
+	
+		spawn(function()
+			while _G.cookroomfucker and wait() do
+				for i,v in pairs(game:GetService("Workspace").Ovens:GetChildren()) do
+					v.Door.ClickDetector.Detector:FireServer()
+					wait(.75)
+				end
+			end
+		end)
 	end)
 	
 	
 end
-coroutine.wrap(LDVU_fake_script)()
+coroutine.wrap(TZFXSXP_fake_script)()
