@@ -1,5 +1,8 @@
 -- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
-
+local function gethui()
+    local success, result = pcall(function() return get_hidden_gui or gethui or function() return game:GetService("CoreGui") end end)
+    return (typeof(result) == "function" and result()) or game:GetService("CoreGui")
+end
 -- Instances:
 
 local Converted = {
@@ -26,7 +29,7 @@ local Converted = {
 -- Properties:
 
 Converted["_阆堟瓥淁毖响"].Name = "阆堟瓥淁毖响"
-Converted["_阆堟瓥淁毖响"].Parent = game:GetService("CoreGui")
+Converted["_阆堟瓥淁毖响"].Parent = gethui()
 
 Converted["_暪戟外泀闊膴騨芨"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_暪戟外泀闊膴騨芨"].BackgroundTransparency = 1
