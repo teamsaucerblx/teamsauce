@@ -16,6 +16,8 @@ local TextButton_2 = Instance.new("TextButton")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local TextButton_3 = Instance.new("TextButton")
 local ImageLabel_3 = Instance.new("ImageLabel")
+local TextButton_4 = Instance.new("TextButton")
+local ImageLabel_4 = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -142,7 +144,7 @@ TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 TextButton_3.BackgroundTransparency = 1.000
 TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.352949321, 0, 0.531816363, 0)
+TextButton_3.Position = UDim2.new(0.167967632, 0, 0.507340848, 0)
 TextButton_3.Size = UDim2.new(0, 158, 0, 50)
 TextButton_3.ZIndex = 2
 TextButton_3.Font = Enum.Font.SourceSans
@@ -168,9 +170,41 @@ ImageLabel_3.ScaleType = Enum.ScaleType.Slice
 ImageLabel_3.SliceCenter = Rect.new(100, 100, 100, 100)
 ImageLabel_3.SliceScale = 0.120
 
+TextButton_4.Name = "????????"
+TextButton_4.Parent = Frame_2
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_4.BackgroundTransparency = 1.000
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.552583039, 0, 0.507340848, 0)
+TextButton_4.Size = UDim2.new(0, 158, 0, 50)
+TextButton_4.ZIndex = 2
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Tp every car to cook area"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+ImageLabel_4.Name = "????????"
+ImageLabel_4.Parent = TextButton_4
+ImageLabel_4.Active = true
+ImageLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel_4.Position = UDim2.new(0.495000005, 0, 0.5, 0)
+ImageLabel_4.Selectable = true
+ImageLabel_4.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel_4.Image = "rbxassetid://3570695787"
+ImageLabel_4.ImageColor3 = Color3.fromRGB(255, 0, 4)
+ImageLabel_4.ScaleType = Enum.ScaleType.Slice
+ImageLabel_4.SliceCenter = Rect.new(100, 100, 100, 100)
+ImageLabel_4.SliceScale = 0.120
+
 -- Scripts:
 
-local function HYRN_fake_script() -- Frame.drag 
+local function QJJCT_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
@@ -213,8 +247,8 @@ local function HYRN_fake_script() -- Frame.drag
 	end)
 	
 end
-coroutine.wrap(HYRN_fake_script)()
-local function HMTLP_fake_script() -- minbtn.?????? 
+coroutine.wrap(QJJCT_fake_script)()
+local function ICVUHG_fake_script() -- minbtn.?????? 
 	local script = Instance.new('LocalScript', minbtn)
 
 	local button = script.Parent
@@ -232,8 +266,8 @@ local function HMTLP_fake_script() -- minbtn.??????
 	
 	
 end
-coroutine.wrap(HMTLP_fake_script)()
-local function PHPC_fake_script() -- TextButton.??????? 
+coroutine.wrap(ICVUHG_fake_script)()
+local function YQYZNV_fake_script() -- TextButton.??????? 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -252,8 +286,8 @@ local function PHPC_fake_script() -- TextButton.???????
 	
 	
 end
-coroutine.wrap(PHPC_fake_script)()
-local function QXWR_fake_script() -- TextButton_2.?????????? 
+coroutine.wrap(YQYZNV_fake_script)()
+local function AHNQYMN_fake_script() -- TextButton_2.?????????? 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -272,8 +306,8 @@ local function QXWR_fake_script() -- TextButton_2.??????????
 	
 	
 end
-coroutine.wrap(QXWR_fake_script)()
-local function QAHTH_fake_script() -- TextButton_3.?????? 
+coroutine.wrap(AHNQYMN_fake_script)()
+local function DSONCGB_fake_script() -- TextButton_3.?????? 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -284,4 +318,26 @@ local function QAHTH_fake_script() -- TextButton_3.??????
 	
 	
 end
-coroutine.wrap(QAHTH_fake_script)()
+coroutine.wrap(DSONCGB_fake_script)()
+local function LDVU_fake_script() -- TextButton_4.buttonhandler 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		-- teleport every model named "Car" in the workspace to 76.518, -5456.55, 13.851, offsetting each car
+		local basePosition = Vector3.new(76.518, -5456.55, 13.851)
+		local offsetStep = 10 -- distance between each car
+		local carIndex = 0
+		for _, model in workspace:GetChildren() do
+			if model:IsA("Model") and model.Name == "Car" then
+				local targetCFrame = CFrame.new(basePosition + Vector3.new(carIndex * offsetStep, 0, 0))
+				model:PivotTo(targetCFrame)
+				carIndex = carIndex + 1
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(LDVU_fake_script)()
