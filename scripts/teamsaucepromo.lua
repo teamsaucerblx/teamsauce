@@ -1,88 +1,177 @@
--- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
-local Converted = {
-	["_ScreenGui"] = Instance.new("ScreenGui");
-	["_Frame"] = Instance.new("ImageLabel");
-	["_DragScript"] = Instance.new("LocalScript");
-	["_ImageButton"] = Instance.new("ImageButton");
-	["_ButtonClickHandler"] = Instance.new("LocalScript");
-	["_UICorner"] = Instance.new("UICorner");
-	["_ImageLabel"] = Instance.new("ImageLabel");
-	["_ImageButton1"] = Instance.new("ImageButton");
-	["_ButtonClickHandler1"] = Instance.new("LocalScript");
-	["_UICorner1"] = Instance.new("UICorner");
-}
+local screen = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local minbtn = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local TextButton_2 = Instance.new("TextButton")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextButton_3 = Instance.new("TextButton")
+local ImageLabel_3 = Instance.new("ImageLabel")
 
--- Properties:
+--Properties:
 
--- Parent the ScreenGui to the player's PlayerGui, not CoreGui
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-Converted["_ScreenGui"].Parent = syn_protectgui()
+screen.Name = "screen"
+screen.Parent = gethui()
 
-Converted["_Frame"].Image = "rbxassetid://3570695787"
-Converted["_Frame"].ImageColor3 = Color3.fromRGB(255, 93, 96)
-Converted["_Frame"].ScaleType = Enum.ScaleType.Slice
-Converted["_Frame"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Frame"].SliceScale = 0.12
-Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Frame"].BackgroundTransparency = 1
-Converted["_Frame"].BorderColor3 = Color3.fromRGB(27, 42, 53)
-Converted["_Frame"].Position = UDim2.new(0.233667314, 0, 0.272388071, 0)
-Converted["_Frame"].Size = UDim2.new(0, 541, 0, 286)
-Converted["_Frame"].Name = "Frame"
-Converted["_Frame"].Parent = Converted["_ScreenGui"]
+Frame.Parent = screen
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.290055245, 0, 0.286069661, 0)
+Frame.Size = UDim2.new(0, 546, 0, 286)
 
-Converted["_ImageButton"].Image = "rbxassetid://115936484950210"
-Converted["_ImageButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageButton"].BorderSizePixel = 0
-Converted["_ImageButton"].Position = UDim2.new(0.112754159, 0, 0.409090906, 0)
-Converted["_ImageButton"].Size = UDim2.new(0, 200, 0, 50)
-Converted["_ImageButton"].Parent = Converted["_Frame"]
+minbtn.Name = "minbtn"
+minbtn.Parent = Frame
+minbtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+minbtn.BackgroundTransparency = 1.000
+minbtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+minbtn.BorderSizePixel = 0
+minbtn.Position = UDim2.new(0.884072006, 0, 0.00285286014, 0)
+minbtn.Size = UDim2.new(0, 62, 0, 62)
+minbtn.ZIndex = 2
+minbtn.Image = "rbxassetid://128314801078941"
+minbtn.ImageColor3 = Color3.fromRGB(0, 0, 0)
 
-Converted["_UICorner"].CornerRadius = UDim.new(0.2, 8)
-Converted["_UICorner"].Parent = Converted["_ImageButton"]
+UICorner.CornerRadius = UDim.new(0.200000003, 8)
+UICorner.Name = "?????????"
+UICorner.Parent = minbtn
 
-Converted["_ImageLabel"].Image = "rbxassetid://97452911691346"
-Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel"].BorderSizePixel = 0
-Converted["_ImageLabel"].Position = UDim2.new(0.170055449, 0, 0.0594405606, 0)
-Converted["_ImageLabel"].Size = UDim2.new(0, 357, 0, 49)
-Converted["_ImageLabel"].Parent = Converted["_Frame"]
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 93, 96)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(-0.00236069667, 0, 0.00316241081, 0)
+Frame_2.Size = UDim2.new(0, 546, 0, 286)
 
-Converted["_ImageButton1"].Image = "rbxassetid://100324559183689"
-Converted["_ImageButton1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageButton1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageButton1"].BorderSizePixel = 0
-Converted["_ImageButton1"].Position = UDim2.new(0.528650641, 0, 0.409090906, 0)
-Converted["_ImageButton1"].Size = UDim2.new(0, 200, 0, 50)
-Converted["_ImageButton1"].Parent = Converted["_Frame"]
+TextLabel.Name = "???????"
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.129412189, 0, 0.0887868404, 0)
+TextLabel.Size = UDim2.new(0, 403, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Team Sauce Promo GUI"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
-Converted["_UICorner1"].CornerRadius = UDim.new(0.2, 8)
-Converted["_UICorner1"].Parent = Converted["_ImageButton1"]
+UICorner_2.CornerRadius = UDim.new(0.00999999978, 8)
+UICorner_2.Name = "????????"
+UICorner_2.Parent = Frame_2
 
--- Fake Module Scripts:
+TextButton.Name = "????????"
+TextButton.Parent = Frame_2
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.552583039, 0, 0.287061155, 0)
+TextButton.Size = UDim2.new(0, 158, 0, 50)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "House Sauced!"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
-local fake_module_scripts = {}
+ImageLabel.Name = "????????"
+ImageLabel.Parent = TextButton
+ImageLabel.Active = true
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel.Position = UDim2.new(0.495000005, 0, 0.5, 0)
+ImageLabel.Selectable = true
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.Image = "rbxassetid://3570695787"
+ImageLabel.ImageColor3 = Color3.fromRGB(255, 0, 4)
+ImageLabel.ScaleType = Enum.ScaleType.Slice
+ImageLabel.SliceCenter = Rect.new(100, 100, 100, 100)
+ImageLabel.SliceScale = 0.120
 
--- Fake Local Scripts:
+TextButton_2.Name = "??????????"
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.167967632, 0, 0.287061155, 0)
+TextButton_2.Size = UDim2.new(0, 158, 0, 50)
+TextButton_2.ZIndex = 2
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Promote!"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
 
-local function UFDK_fake_script() -- DragScript
-    local script = Instance.new("LocalScript")
-    script.Name = "DragScript"
-    script.Parent = Converted["_Frame"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+ImageLabel_2.Name = "???????????"
+ImageLabel_2.Parent = TextButton_2
+ImageLabel_2.Active = true
+ImageLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel_2.Position = UDim2.new(0.495000005, 0, 0.5, 0)
+ImageLabel_2.Selectable = true
+ImageLabel_2.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel_2.Image = "rbxassetid://3570695787"
+ImageLabel_2.ImageColor3 = Color3.fromRGB(255, 0, 4)
+ImageLabel_2.ScaleType = Enum.ScaleType.Slice
+ImageLabel_2.SliceCenter = Rect.new(100, 100, 100, 100)
+ImageLabel_2.SliceScale = 0.120
+
+TextButton_3.Name = "????????"
+TextButton_3.Parent = Frame_2
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.352949321, 0, 0.531816363, 0)
+TextButton_3.Size = UDim2.new(0, 158, 0, 50)
+TextButton_3.ZIndex = 2
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "WCPD (LAG)"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+ImageLabel_3.Name = "????????"
+ImageLabel_3.Parent = TextButton_3
+ImageLabel_3.Active = true
+ImageLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ImageLabel_3.Position = UDim2.new(0.495000005, 0, 0.5, 0)
+ImageLabel_3.Selectable = true
+ImageLabel_3.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel_3.Image = "rbxassetid://3570695787"
+ImageLabel_3.ImageColor3 = Color3.fromRGB(255, 0, 4)
+ImageLabel_3.ScaleType = Enum.ScaleType.Slice
+ImageLabel_3.SliceCenter = Rect.new(100, 100, 100, 100)
+ImageLabel_3.SliceScale = 0.120
+
+-- Scripts:
+
+local function HYRN_fake_script() -- Frame.drag 
+	local script = Instance.new('LocalScript', Frame)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
 	--Put this inside of your Frame and configure the speed if you would like.
@@ -122,51 +211,30 @@ local function UFDK_fake_script() -- DragScript
 			end
 		end
 	end)
+	
 end
-
-local function GZSKSLZ_fake_script() -- ButtonClickHandler for _ImageButton
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonClickHandler"
-    script.Parent = Converted["_ImageButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(HYRN_fake_script)()
+local function HMTLP_fake_script() -- minbtn.?????? 
+	local script = Instance.new('LocalScript', minbtn)
 
 	local button = script.Parent
 	
-	local function Chat(msg)
-		if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
-			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
-		else
-			local TextChatService = game:GetService("TextChatService")
-			if TextChatService.TextChannels:FindFirstChild("RBXGeneral") then
-				TextChatService.TextChannels.RBXGeneral:SendAsync(msg)
-			end
+	local function toggleFrame()
+		-- if the child frame of the parent frame is shown, hide it, if it is hidden, show it
+		local parentFrame = script.Parent.Parent:FindFirstChild("Frame")
+		if parentFrame then
+			parentFrame.Visible = not parentFrame.Visible
 		end
 	end
 	
-	button.MouseButton1Click:Connect(function()
-		Chat("TEAM SAUCE IS HERE, MIGHT AS WELL JOIN. 123 SAUCE!!")
-	end)
+	button.MouseButton1Click:Connect(toggleFrame)
+	button.TouchTap:Connect(toggleFrame)
+	
+	
 end
-
-local function DGMXOGD_fake_script() -- ButtonClickHandler for _ImageButton1
-    local script = Instance.new("LocalScript")
-    script.Name = "ButtonClickHandler"
-    script.Parent = Converted["_ImageButton1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(HMTLP_fake_script)()
+local function PHPC_fake_script() -- TextButton.??????? 
+	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
 	
@@ -174,19 +242,46 @@ local function DGMXOGD_fake_script() -- ButtonClickHandler for _ImageButton1
 		if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
 			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
 		else
-			local TextChatService = game:GetService("TextChatService")
-			if TextChatService.TextChannels:FindFirstChild("RBXGeneral") then
-				TextChatService.TextChannels.RBXGeneral:SendAsync(msg)
-			end
+			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
 		end
 	end
 	
 	button.MouseButton1Click:Connect(function()
 		Chat("A HOUSE HAS BEEN SAUCED BY TEAM SAUCE. YOU MAY BE NEXT.")
 	end)
+	
+	
 end
+coroutine.wrap(PHPC_fake_script)()
+local function QXWR_fake_script() -- TextButton_2.?????????? 
+	local script = Instance.new('LocalScript', TextButton_2)
 
-coroutine.wrap(UFDK_fake_script)()
-coroutine.wrap(GZSKSLZ_fake_script)()
-coroutine.wrap(DGMXOGD_fake_script)()
+	local button = script.Parent
+	
+	local function Chat(msg)
+		if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+		else
+			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		Chat("TEAM SAUCE IS COMING FOR YOU.")
+	end)
+	
+	
+end
+coroutine.wrap(QXWR_fake_script)()
+local function QAHTH_fake_script() -- TextButton_3.?????? 
+	local script = Instance.new('LocalScript', TextButton_3)
 
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Work-At-A-Pizza-Place-wapp-room-fker-43446"))()
+	end)
+	
+	
+end
+coroutine.wrap(QAHTH_fake_script)()
