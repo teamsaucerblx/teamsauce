@@ -1,4 +1,3 @@
--- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
 local function gethui()
     local success, result = pcall(function() return get_hidden_gui or gethui or function() return game:GetService("CoreGui") end end)
     return (typeof(result) == "function" and result()) or game:GetService("CoreGui")
@@ -6,183 +5,174 @@ end
 -- Instances:
 
 local Converted = {
-	["_阆堟瓥淁毖响"] = Instance.new("ScreenGui");
-	["_暪戟外泀闊膴騨芨"] = Instance.new("Frame");
-	["_鏞翾恸纵浅蝺凱"] = Instance.new("Frame");
-	["_賃夤籁蚵軫鰣窄"] = Instance.new("TextLabel");
-	["_逶銤及瀡荔鳅買髱"] = Instance.new("UICorner");
-	["_啗滳増鉗篦蟥蘬崸"] = Instance.new("TextButton");
-	["_寀瘞槏祪覜渱韱"] = Instance.new("LocalScript");
-	["_鈤缪烎鼎璀掃吢糙"] = Instance.new("ImageLabel");
-	["_珅譇敔鲡鯓囕埛捒馋攷"] = Instance.new("TextButton");
-	["_亶龌父嫻赺豫髇錄梡紼"] = Instance.new("LocalScript");
-	["_瓑絢飍堭峘鈉膘裀涵嫈揠"] = Instance.new("ImageLabel");
-	["_磔遅幽綎黺混镯脇"] = Instance.new("TextButton");
-	["_攢賊萨禷嚣彝"] = Instance.new("LocalScript");
-	["_盞銔琫孮嬊僐貉咞"] = Instance.new("ImageLabel");
-	["_唠泤轻剷褧快"] = Instance.new("LocalScript");
-	["_镓鸙菿娈美墌祓玝謦嶮覱虇"] = Instance.new("ImageButton");
-	["_湍烧杴鍍篻鴻弚嫭葖"] = Instance.new("UICorner");
-	["_鷝嶎悝蒏漫繹"] = Instance.new("LocalScript");
+	["_teamsauce?"] = Instance.new("ScreenGui");
+	["_Frame"] = Instance.new("Frame");
+	["_Frame1"] = Instance.new("Frame");
+	["_TextLabel"] = Instance.new("TextLabel");
+	["_UICorner"] = Instance.new("UICorner");
+	["_TextButton"] = Instance.new("TextButton");
+	["_ButtonClickHandler"] = Instance.new("LocalScript");
+	["_TextButton_Roundify_12px"] = Instance.new("ImageLabel");
+	["_TextButton1"] = Instance.new("TextButton");
+	["_ButtonClickHandler1"] = Instance.new("LocalScript");
+	["_TextButton_Roundify_12px1"] = Instance.new("ImageLabel");
+	["_TextButton2"] = Instance.new("TextButton");
+	["_ButtonClickHandler2"] = Instance.new("LocalScript");
+	["_TextButton_Roundify_12px2"] = Instance.new("ImageLabel");
+	["_DragScript"] = Instance.new("LocalScript");
+	["_ImageButton"] = Instance.new("ImageButton");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_ButtonClickHandler3"] = Instance.new("LocalScript");
 }
 
 -- Properties:
 
-Converted["_阆堟瓥淁毖响"].Name = "阆堟瓥淁毖响"
-Converted["_阆堟瓥淁毖响"].Parent = gethui()
+Converted["_teamsauce?"].Name = "teamsauce?"
+Converted["_teamsauce?"].Parent = gethui()
 
-Converted["_暪戟外泀闊膴騨芨"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_暪戟外泀闊膴騨芨"].BackgroundTransparency = 1
-Converted["_暪戟外泀闊膴騨芨"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_暪戟外泀闊膴騨芨"].BorderSizePixel = 0
-Converted["_暪戟外泀闊膴騨芨"].Position = UDim2.new(0.290055245, 0, 0.286069661, 0)
-Converted["_暪戟外泀闊膴騨芨"].Size = UDim2.new(0, 546, 0, 286)
-Converted["_暪戟外泀闊膴騨芨"].Name = "暪戟外泀闊膴騨芨"
-Converted["_暪戟外泀闊膴騨芨"].Parent = Converted["_阆堟瓥淁毖响"]
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Frame"].BackgroundTransparency = 1
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame"].BorderSizePixel = 0
+Converted["_Frame"].Position = UDim2.new(0.290055245, 0, 0.286069661, 0)
+Converted["_Frame"].Size = UDim2.new(0, 546, 0, 286)
+Converted["_Frame"].Parent = Converted["_teamsauce?"]
 
-Converted["_鏞翾恸纵浅蝺凱"].AutomaticSize = Enum.AutomaticSize.Y
-Converted["_鏞翾恸纵浅蝺凱"].BackgroundColor3 = Color3.fromRGB(255, 93.00000205636024, 96.00000947713852)
-Converted["_鏞翾恸纵浅蝺凱"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_鏞翾恸纵浅蝺凱"].BorderSizePixel = 0
-Converted["_鏞翾恸纵浅蝺凱"].Position = UDim2.new(-0.00236069667, 0, 0.00316241081, 0)
-Converted["_鏞翾恸纵浅蝺凱"].Size = UDim2.new(0, 546, 0, 286)
-Converted["_鏞翾恸纵浅蝺凱"].Name = "鏞翾恸纵浅蝺凱"
-Converted["_鏞翾恸纵浅蝺凱"].Parent = Converted["_暪戟外泀闊膴騨芨"]
+Converted["_Frame1"].AutomaticSize = Enum.AutomaticSize.Y
+Converted["_Frame1"].BackgroundColor3 = Color3.fromRGB(255, 93.00000205636024, 96.00000947713852)
+Converted["_Frame1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame1"].BorderSizePixel = 0
+Converted["_Frame1"].Position = UDim2.new(-0.00236069667, 0, 0.00316241081, 0)
+Converted["_Frame1"].Size = UDim2.new(0, 546, 0, 286)
+Converted["_Frame1"].Parent = Converted["_Frame"]
 
-Converted["_賃夤籁蚵軫鰣窄"].Font = Enum.Font.SourceSans
-Converted["_賃夤籁蚵軫鰣窄"].Text = "Team Sauce Promo GUI"
-Converted["_賃夤籁蚵軫鰣窄"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_賃夤籁蚵軫鰣窄"].TextScaled = true
-Converted["_賃夤籁蚵軫鰣窄"].TextSize = 14
-Converted["_賃夤籁蚵軫鰣窄"].TextWrapped = true
-Converted["_賃夤籁蚵軫鰣窄"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_賃夤籁蚵軫鰣窄"].BackgroundTransparency = 1
-Converted["_賃夤籁蚵軫鰣窄"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_賃夤籁蚵軫鰣窄"].BorderSizePixel = 0
-Converted["_賃夤籁蚵軫鰣窄"].Position = UDim2.new(0.129412189, 0, 0.0887868404, 0)
-Converted["_賃夤籁蚵軫鰣窄"].Size = UDim2.new(0, 403, 0, 50)
-Converted["_賃夤籁蚵軫鰣窄"].Name = "賃夤籁蚵軫鰣窄"
-Converted["_賃夤籁蚵軫鰣窄"].Parent = Converted["_鏞翾恸纵浅蝺凱"]
+Converted["_TextLabel"].Font = Enum.Font.SourceSans
+Converted["_TextLabel"].Text = "Team Sauce Promo GUI"
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 14
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].BackgroundTransparency = 1
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Position = UDim2.new(0.129412189, 0, 0.0887868404, 0)
+Converted["_TextLabel"].Size = UDim2.new(0, 403, 0, 50)
+Converted["_TextLabel"].Parent = Converted["_Frame1"]
 
-Converted["_逶銤及瀡荔鳅買髱"].CornerRadius = UDim.new(0.00999999978, 8)
-Converted["_逶銤及瀡荔鳅買髱"].Name = "逶銤及瀡荔鳅買髱"
-Converted["_逶銤及瀡荔鳅買髱"].Parent = Converted["_鏞翾恸纵浅蝺凱"]
+Converted["_UICorner"].CornerRadius = UDim.new(0.00999999978, 8)
+Converted["_UICorner"].Parent = Converted["_Frame1"]
 
-Converted["_啗滳増鉗篦蟥蘬崸"].Font = Enum.Font.SourceSans
-Converted["_啗滳増鉗篦蟥蘬崸"].Text = "House Sauced!"
-Converted["_啗滳増鉗篦蟥蘬崸"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_啗滳増鉗篦蟥蘬崸"].TextScaled = true
-Converted["_啗滳増鉗篦蟥蘬崸"].TextSize = 14
-Converted["_啗滳増鉗篦蟥蘬崸"].TextWrapped = true
-Converted["_啗滳増鉗篦蟥蘬崸"].BackgroundColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
-Converted["_啗滳増鉗篦蟥蘬崸"].BackgroundTransparency = 1
-Converted["_啗滳増鉗篦蟥蘬崸"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_啗滳増鉗篦蟥蘬崸"].BorderSizePixel = 0
-Converted["_啗滳増鉗篦蟥蘬崸"].Position = UDim2.new(0.552583039, 0, 0.287061155, 0)
-Converted["_啗滳増鉗篦蟥蘬崸"].Size = UDim2.new(0, 158, 0, 50)
-Converted["_啗滳増鉗篦蟥蘬崸"].ZIndex = 2
-Converted["_啗滳増鉗篦蟥蘬崸"].Name = "啗滳増鉗篦蟥蘬崸"
-Converted["_啗滳増鉗篦蟥蘬崸"].Parent = Converted["_鏞翾恸纵浅蝺凱"]
+Converted["_TextButton"].Font = Enum.Font.SourceSans
+Converted["_TextButton"].Text = "House Sauced!"
+Converted["_TextButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].TextScaled = true
+Converted["_TextButton"].TextSize = 14
+Converted["_TextButton"].TextWrapped = true
+Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
+Converted["_TextButton"].BackgroundTransparency = 1
+Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].BorderSizePixel = 0
+Converted["_TextButton"].Position = UDim2.new(0.552583039, 0, 0.287061155, 0)
+Converted["_TextButton"].Size = UDim2.new(0, 158, 0, 50)
+Converted["_TextButton"].ZIndex = 2
+Converted["_TextButton"].Parent = Converted["_Frame1"]
 
-Converted["_鈤缪烎鼎璀掃吢糙"].Image = "rbxassetid://3570695787"
-Converted["_鈤缪烎鼎璀掃吢糙"].ImageColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
-Converted["_鈤缪烎鼎璀掃吢糙"].ImageContent = Content
-Converted["_鈤缪烎鼎璀掃吢糙"].ScaleType = Enum.ScaleType.Slice
-Converted["_鈤缪烎鼎璀掃吢糙"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_鈤缪烎鼎璀掃吢糙"].SliceScale = 0.11999999731779099
-Converted["_鈤缪烎鼎璀掃吢糙"].Active = true
-Converted["_鈤缪烎鼎璀掃吢糙"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_鈤缪烎鼎璀掃吢糙"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_鈤缪烎鼎璀掃吢糙"].BackgroundTransparency = 1
-Converted["_鈤缪烎鼎璀掃吢糙"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_鈤缪烎鼎璀掃吢糙"].Position = UDim2.new(0.495000005, 0, 0.5, 0)
-Converted["_鈤缪烎鼎璀掃吢糙"].Selectable = true
-Converted["_鈤缪烎鼎璀掃吢糙"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_鈤缪烎鼎璀掃吢糙"].Name = "鈤缪烎鼎璀掃吢糙"
-Converted["_鈤缪烎鼎璀掃吢糙"].Parent = Converted["_啗滳増鉗篦蟥蘬崸"]
+Converted["_TextButton_Roundify_12px"].Image = "rbxassetid://3570695787"
+Converted["_TextButton_Roundify_12px"].ImageColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
+Converted["_TextButton_Roundify_12px"].ImageContent = Content
+Converted["_TextButton_Roundify_12px"].ScaleType = Enum.ScaleType.Slice
+Converted["_TextButton_Roundify_12px"].SliceCenter = Rect.new(100, 100, 100, 100)
+Converted["_TextButton_Roundify_12px"].SliceScale = 0.11999999731779099
+Converted["_TextButton_Roundify_12px"].Active = true
+Converted["_TextButton_Roundify_12px"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TextButton_Roundify_12px"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton_Roundify_12px"].BackgroundTransparency = 1
+Converted["_TextButton_Roundify_12px"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_TextButton_Roundify_12px"].Position = UDim2.new(0.495000005, 0, 0.5, 0)
+Converted["_TextButton_Roundify_12px"].Selectable = true
+Converted["_TextButton_Roundify_12px"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton_Roundify_12px"].Name = "TextButton_Roundify_12px"
+Converted["_TextButton_Roundify_12px"].Parent = Converted["_TextButton"]
 
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].Font = Enum.Font.SourceSans
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].Text = "Promote!"
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].TextScaled = true
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].TextSize = 14
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].TextWrapped = true
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].BackgroundColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].BackgroundTransparency = 1
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].BorderSizePixel = 0
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].Position = UDim2.new(0.167967632, 0, 0.287061155, 0)
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].Size = UDim2.new(0, 158, 0, 50)
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].ZIndex = 2
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].Name = "珅譇敔鲡鯓囕埛捒馋攷"
-Converted["_珅譇敔鲡鯓囕埛捒馋攷"].Parent = Converted["_鏞翾恸纵浅蝺凱"]
+Converted["_TextButton1"].Font = Enum.Font.SourceSans
+Converted["_TextButton1"].Text = "Promote!"
+Converted["_TextButton1"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton1"].TextScaled = true
+Converted["_TextButton1"].TextSize = 14
+Converted["_TextButton1"].TextWrapped = true
+Converted["_TextButton1"].BackgroundColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
+Converted["_TextButton1"].BackgroundTransparency = 1
+Converted["_TextButton1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton1"].BorderSizePixel = 0
+Converted["_TextButton1"].Position = UDim2.new(0.167967632, 0, 0.287061155, 0)
+Converted["_TextButton1"].Size = UDim2.new(0, 158, 0, 50)
+Converted["_TextButton1"].ZIndex = 2
+Converted["_TextButton1"].Parent = Converted["_Frame1"]
 
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].Image = "rbxassetid://3570695787"
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].ImageColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].ImageContent = Content
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].ScaleType = Enum.ScaleType.Slice
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].SliceScale = 0.11999999731779099
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].Active = true
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].BackgroundTransparency = 1
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].Position = UDim2.new(0.495000005, 0, 0.5, 0)
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].Selectable = true
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].Name = "瓑絢飍堭峘鈉膘裀涵嫈揠"
-Converted["_瓑絢飍堭峘鈉膘裀涵嫈揠"].Parent = Converted["_珅譇敔鲡鯓囕埛捒馋攷"]
+Converted["_TextButton_Roundify_12px1"].Image = "rbxassetid://3570695787"
+Converted["_TextButton_Roundify_12px1"].ImageColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
+Converted["_TextButton_Roundify_12px1"].ImageContent = Content
+Converted["_TextButton_Roundify_12px1"].ScaleType = Enum.ScaleType.Slice
+Converted["_TextButton_Roundify_12px1"].SliceCenter = Rect.new(100, 100, 100, 100)
+Converted["_TextButton_Roundify_12px1"].SliceScale = 0.11999999731779099
+Converted["_TextButton_Roundify_12px1"].Active = true
+Converted["_TextButton_Roundify_12px1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TextButton_Roundify_12px1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton_Roundify_12px1"].BackgroundTransparency = 1
+Converted["_TextButton_Roundify_12px1"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_TextButton_Roundify_12px1"].Position = UDim2.new(0.495000005, 0, 0.5, 0)
+Converted["_TextButton_Roundify_12px1"].Selectable = true
+Converted["_TextButton_Roundify_12px1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton_Roundify_12px1"].Name = "TextButton_Roundify_12px"
+Converted["_TextButton_Roundify_12px1"].Parent = Converted["_TextButton1"]
 
-Converted["_磔遅幽綎黺混镯脇"].Font = Enum.Font.SourceSans
-Converted["_磔遅幽綎黺混镯脇"].Text = "WCPD (LAG)"
-Converted["_磔遅幽綎黺混镯脇"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_磔遅幽綎黺混镯脇"].TextScaled = true
-Converted["_磔遅幽綎黺混镯脇"].TextSize = 14
-Converted["_磔遅幽綎黺混镯脇"].TextWrapped = true
-Converted["_磔遅幽綎黺混镯脇"].BackgroundColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
-Converted["_磔遅幽綎黺混镯脇"].BackgroundTransparency = 1
-Converted["_磔遅幽綎黺混镯脇"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_磔遅幽綎黺混镯脇"].BorderSizePixel = 0
-Converted["_磔遅幽綎黺混镯脇"].Position = UDim2.new(0.352949321, 0, 0.531816363, 0)
-Converted["_磔遅幽綎黺混镯脇"].Size = UDim2.new(0, 158, 0, 50)
-Converted["_磔遅幽綎黺混镯脇"].ZIndex = 2
-Converted["_磔遅幽綎黺混镯脇"].Name = "磔遅幽綎黺混镯脇"
-Converted["_磔遅幽綎黺混镯脇"].Parent = Converted["_鏞翾恸纵浅蝺凱"]
+Converted["_TextButton2"].Font = Enum.Font.SourceSans
+Converted["_TextButton2"].Text = "WCPD (LAG)"
+Converted["_TextButton2"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton2"].TextScaled = true
+Converted["_TextButton2"].TextSize = 14
+Converted["_TextButton2"].TextWrapped = true
+Converted["_TextButton2"].BackgroundColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
+Converted["_TextButton2"].BackgroundTransparency = 1
+Converted["_TextButton2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton2"].BorderSizePixel = 0
+Converted["_TextButton2"].Position = UDim2.new(0.352949321, 0, 0.531816363, 0)
+Converted["_TextButton2"].Size = UDim2.new(0, 158, 0, 50)
+Converted["_TextButton2"].ZIndex = 2
+Converted["_TextButton2"].Parent = Converted["_Frame1"]
 
-Converted["_盞銔琫孮嬊僐貉咞"].Image = "rbxassetid://3570695787"
-Converted["_盞銔琫孮嬊僐貉咞"].ImageColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
-Converted["_盞銔琫孮嬊僐貉咞"].ImageContent = Content
-Converted["_盞銔琫孮嬊僐貉咞"].ScaleType = Enum.ScaleType.Slice
-Converted["_盞銔琫孮嬊僐貉咞"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_盞銔琫孮嬊僐貉咞"].SliceScale = 0.11999999731779099
-Converted["_盞銔琫孮嬊僐貉咞"].Active = true
-Converted["_盞銔琫孮嬊僐貉咞"].AnchorPoint = Vector2.new(0.5, 0.5)
-Converted["_盞銔琫孮嬊僐貉咞"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_盞銔琫孮嬊僐貉咞"].BackgroundTransparency = 1
-Converted["_盞銔琫孮嬊僐貉咞"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_盞銔琫孮嬊僐貉咞"].Position = UDim2.new(0.495000005, 0, 0.5, 0)
-Converted["_盞銔琫孮嬊僐貉咞"].Selectable = true
-Converted["_盞銔琫孮嬊僐貉咞"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_盞銔琫孮嬊僐貉咞"].Name = "盞銔琫孮嬊僐貉咞"
-Converted["_盞銔琫孮嬊僐貉咞"].Parent = Converted["_磔遅幽綎黺混镯脇"]
+Converted["_TextButton_Roundify_12px2"].Image = "rbxassetid://3570695787"
+Converted["_TextButton_Roundify_12px2"].ImageColor3 = Color3.fromRGB(255, 0, 4.000000236555934)
+Converted["_TextButton_Roundify_12px2"].ImageContent = Content
+Converted["_TextButton_Roundify_12px2"].ScaleType = Enum.ScaleType.Slice
+Converted["_TextButton_Roundify_12px2"].SliceCenter = Rect.new(100, 100, 100, 100)
+Converted["_TextButton_Roundify_12px2"].SliceScale = 0.11999999731779099
+Converted["_TextButton_Roundify_12px2"].Active = true
+Converted["_TextButton_Roundify_12px2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TextButton_Roundify_12px2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton_Roundify_12px2"].BackgroundTransparency = 1
+Converted["_TextButton_Roundify_12px2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_TextButton_Roundify_12px2"].Position = UDim2.new(0.495000005, 0, 0.5, 0)
+Converted["_TextButton_Roundify_12px2"].Selectable = true
+Converted["_TextButton_Roundify_12px2"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton_Roundify_12px2"].Name = "TextButton_Roundify_12px"
+Converted["_TextButton_Roundify_12px2"].Parent = Converted["_TextButton2"]
 
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].Image = "rbxassetid://128314801078941"
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].ImageColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].ImageContent = Content
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].BackgroundTransparency = 1
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].BorderSizePixel = 0
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].Position = UDim2.new(0.884072006, 0, 0.00285286014, 0)
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].Size = UDim2.new(0, 62, 0, 62)
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].ZIndex = 2
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].Name = "镓鸙菿娈美墌祓玝謦嶮覱虇"
-Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"].Parent = Converted["_暪戟外泀闊膴騨芨"]
+Converted["_ImageButton"].Image = "rbxassetid://128314801078941"
+Converted["_ImageButton"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ImageButton"].ImageContent = Content
+Converted["_ImageButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ImageButton"].BackgroundTransparency = 1
+Converted["_ImageButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ImageButton"].BorderSizePixel = 0
+Converted["_ImageButton"].Position = UDim2.new(0.884072006, 0, 0.00285286014, 0)
+Converted["_ImageButton"].Size = UDim2.new(0, 62, 0, 62)
+Converted["_ImageButton"].ZIndex = 2
+Converted["_ImageButton"].Parent = Converted["_Frame"]
 
-Converted["_湍烧杴鍍篻鴻弚嫭葖"].CornerRadius = UDim.new(0.200000003, 8)
-Converted["_湍烧杴鍍篻鴻弚嫭葖"].Name = "湍烧杴鍍篻鴻弚嫭葖"
-Converted["_湍烧杴鍍篻鴻弚嫭葖"].Parent = Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"]
+Converted["_UICorner1"].CornerRadius = UDim.new(0.200000003, 8)
+Converted["_UICorner1"].Parent = Converted["_ImageButton"]
 
 -- Fake Module Scripts:
 
@@ -191,10 +181,10 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function CSSOQ_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖响.暪戟外泀闊膴騨芨.鏞翾恸纵浅蝺凱.啗滳増鉗篦蟥蘬崸.寀瘞槏祪覜渱韱
+local function NIDZJD_fake_script() -- Fake Script: StarterGui.teamsauce?.Frame.Frame.TextButton.ButtonClickHandler
     local script = Instance.new("LocalScript")
-    script.Name = "寀瘞槏祪覜渱韱"
-    script.Parent = Converted["_啗滳増鉗篦蟥蘬崸"]
+    script.Name = "ButtonClickHandler"
+    script.Parent = Converted["_TextButton"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -220,10 +210,10 @@ local function CSSOQ_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖响
 	
 	
 end
-local function EXHJYUB_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖响.暪戟外泀闊膴騨芨.鏞翾恸纵浅蝺凱.珅譇敔鲡鯓囕埛捒馋攷.亶龌父嫻赺豫髇錄梡紼
+local function UDJDBI_fake_script() -- Fake Script: StarterGui.teamsauce?.Frame.Frame.TextButton.ButtonClickHandler
     local script = Instance.new("LocalScript")
-    script.Name = "亶龌父嫻赺豫髇錄梡紼"
-    script.Parent = Converted["_珅譇敔鲡鯓囕埛捒馋攷"]
+    script.Name = "ButtonClickHandler"
+    script.Parent = Converted["_TextButton1"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -249,10 +239,10 @@ local function EXHJYUB_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖�
 	
 	
 end
-local function PORGNDM_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖响.暪戟外泀闊膴騨芨.鏞翾恸纵浅蝺凱.磔遅幽綎黺混镯脇.攢賊萨禷嚣彝
+local function UANZV_fake_script() -- Fake Script: StarterGui.teamsauce?.Frame.Frame.TextButton.ButtonClickHandler
     local script = Instance.new("LocalScript")
-    script.Name = "攢賊萨禷嚣彝"
-    script.Parent = Converted["_磔遅幽綎黺混镯脇"]
+    script.Name = "ButtonClickHandler"
+    script.Parent = Converted["_TextButton2"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -270,10 +260,10 @@ local function PORGNDM_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖�
 	
 	
 end
-local function AYGSE_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖响.暪戟外泀闊膴騨芨.唠泤轻剷褧快
+local function DVEM_fake_script() -- Fake Script: StarterGui.teamsauce?.Frame.DragScript
     local script = Instance.new("LocalScript")
-    script.Name = "唠泤轻剷褧快"
-    script.Parent = Converted["_暪戟外泀闊膴騨芨"]
+    script.Name = "DragScript"
+    script.Parent = Converted["_Frame"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -323,10 +313,10 @@ local function AYGSE_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖响
 	end)
 	
 end
-local function ZKSDQB_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖响.暪戟外泀闊膴騨芨.镓鸙菿娈美墌祓玝謦嶮覱虇.鷝嶎悝蒏漫繹
+local function EZNKDO_fake_script() -- Fake Script: StarterGui.teamsauce?.Frame.ImageButton.ButtonClickHandler
     local script = Instance.new("LocalScript")
-    script.Name = "鷝嶎悝蒏漫繹"
-    script.Parent = Converted["_镓鸙菿娈美墌祓玝謦嶮覱虇"]
+    script.Name = "ButtonClickHandler"
+    script.Parent = Converted["_ImageButton"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -344,8 +334,8 @@ local function ZKSDQB_fake_script() -- Fake Script: StarterGui.阆堟瓥淁毖�
 	end)
 end
 
-coroutine.wrap(CSSOQ_fake_script)()
-coroutine.wrap(EXHJYUB_fake_script)()
-coroutine.wrap(PORGNDM_fake_script)()
-coroutine.wrap(AYGSE_fake_script)()
-coroutine.wrap(ZKSDQB_fake_script)()
+coroutine.wrap(NIDZJD_fake_script)()
+coroutine.wrap(UDJDBI_fake_script)()
+coroutine.wrap(UANZV_fake_script)()
+coroutine.wrap(DVEM_fake_script)()
+coroutine.wrap(EZNKDO_fake_script)()
