@@ -204,7 +204,7 @@ ImageLabel_4.SliceScale = 0.120
 
 -- Scripts:
 
-local function ROLGSO_fake_script() -- Frame.drag 
+local function DYYVBV_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
@@ -247,8 +247,8 @@ local function ROLGSO_fake_script() -- Frame.drag
 	end)
 	
 end
-coroutine.wrap(ROLGSO_fake_script)()
-local function EBMKJYE_fake_script() -- minbtn.?????? 
+coroutine.wrap(DYYVBV_fake_script)()
+local function BAID_fake_script() -- minbtn.?????? 
 	local script = Instance.new('LocalScript', minbtn)
 
 	local button = script.Parent
@@ -266,8 +266,8 @@ local function EBMKJYE_fake_script() -- minbtn.??????
 	
 	
 end
-coroutine.wrap(EBMKJYE_fake_script)()
-local function LUGJADD_fake_script() -- TextButton.??????? 
+coroutine.wrap(BAID_fake_script)()
+local function GSPTVAP_fake_script() -- TextButton.??????? 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -286,8 +286,8 @@ local function LUGJADD_fake_script() -- TextButton.???????
 	
 	
 end
-coroutine.wrap(LUGJADD_fake_script)()
-local function KXOER_fake_script() -- TextButton_2.?????????? 
+coroutine.wrap(GSPTVAP_fake_script)()
+local function IVLZF_fake_script() -- TextButton_2.?????????? 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
@@ -306,8 +306,8 @@ local function KXOER_fake_script() -- TextButton_2.??????????
 	
 	
 end
-coroutine.wrap(KXOER_fake_script)()
-local function XPJPM_fake_script() -- TextButton_3.?????? 
+coroutine.wrap(IVLZF_fake_script)()
+local function KVFBPJN_fake_script() -- TextButton_3.?????? 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -318,8 +318,8 @@ local function XPJPM_fake_script() -- TextButton_3.??????
 	
 	
 end
-coroutine.wrap(XPJPM_fake_script)()
-local function TZFXSXP_fake_script() -- TextButton_4.buttonhandler 
+coroutine.wrap(KVFBPJN_fake_script)()
+local function RJDH_fake_script() -- TextButton_4.buttonhandler 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local button = script.Parent
@@ -346,14 +346,17 @@ local function TZFXSXP_fake_script() -- TextButton_4.buttonhandler
 			wait()
 		end
 	
-		-- main script
-	
-		for i,v in pairs(workspace.AllSupplyBoxes:GetChildren()) do
-			v.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+		-- Teleport all models in workspace.Cars to the LocalPlayer's position
+		local character = lp.Character or lp.CharacterAdded:Wait()
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		if hrp then
+			for i, v in workspace.Cars:GetChildren() do
+				moveThing(v, hrp.CFrame)
+			end
 		end
-		wait()
 	
-	
+		-- (Optional: Remove or comment out the old random teleport loop)
+		--[[
 		spawn(function()
 			while _G.cookroomfucker and wait() do
 				spawn(function()
@@ -363,17 +366,10 @@ local function TZFXSXP_fake_script() -- TextButton_4.buttonhandler
 				end)
 			end
 		end)
+		]]
 	
-		spawn(function()
-			while _G.cookroomfucker and wait() do
-				for i,v in pairs(game:GetService("Workspace").Ovens:GetChildren()) do
-					v.Door.ClickDetector.Detector:FireServer()
-					wait(.75)
-				end
-			end
-		end)
 	end)
 	
 	
 end
-coroutine.wrap(TZFXSXP_fake_script)()
+coroutine.wrap(RJDH_fake_script)()
